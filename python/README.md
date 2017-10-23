@@ -6,5 +6,6 @@
 
 ### [Threading](threading/)
 
- * #### [Simple Conditions](threading/simple_condition_variable.py)
-   How simple
+ * #### Conditions <small>[example](threading/condition_variable_de.py)</small> :joy:
+   An example of how threading with conditions work
+   
