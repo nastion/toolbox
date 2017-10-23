@@ -6,11 +6,15 @@
 
 ### [Threading](threading/)
 
- * #### Conditions <small>[example](threading/condition_variable_de.py)</small>
-    @language: German<br>
-    Ein Beispiel, wie Threading mit Condition-Variables erstellt werden kann.
-
+ * #### Conditions
+    * **language**: German/Deutsch<br>
+    [Beispiel](threading/condition_variable_de.py)<br>
+    Threading mit Condition-Variablen heiﬂt, dass 
     
-    **Siehe auch**
+    * **language**: English<br>
+    [Example](threading/condition_variable.py)<br>
+    Threading with condition variables means that you
+        
+    **See also**
     [Python API](https://docs.python.org/2/library/threading.html#condition-objects)
    
