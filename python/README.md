@@ -4,7 +4,7 @@
 
 ---
 
-### [Threading](/threading)
+### [Threading](threading/)
 
- * #### [Simple Conditions](/threading/simple_condition_variable.py)
+ * #### [Simple Conditions](threading/simple_condition_variable.py)
    How simple
