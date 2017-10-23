@@ -1,6 +1,6 @@
 """
 
-
+Eine Klasse, die Threading mit Condition variables überprüft.
 
 @author: Peter Fuchs <pfuchs@student.tgm.ac.at>
 @version: 20171023
