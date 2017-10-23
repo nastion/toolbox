@@ -6,6 +6,11 @@
 
 ### [Threading](threading/)
 
- * #### Conditions <small>[example](threading/condition_variable_de.py)</small> :joy:
-   An example of how threading with conditions work
+ * #### Conditions <small>[example](threading/condition_variable_de.py)</small>
+    @language: German<br>
+    Ein Beispiel, wie Threading mit Condition-Variables erstellt werden kann.
+
+    
+    **Siehe auch**
+    [Python API](https://docs.python.org/2/library/threading.html#condition-objects)
    
