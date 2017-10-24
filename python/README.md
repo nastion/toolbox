@@ -9,7 +9,8 @@
  * #### Conditions
     * **language**: German/Deutsch<br>
     [Beispiel](threading/condition_variable_de.py)<br>
-    Threading mit Condition-Variablen hei�t, dass 
+    Threading mit Condition-Variablen heißt, dass ein Lock mithilfe einer Variablen ausgelöst wird.
+    Hierfür gibt es folgende Funktionen:
     
     * **language**: English<br>
     [Example](threading/condition_variable.py)<br>
