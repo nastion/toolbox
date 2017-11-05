@@ -50,7 +50,20 @@
         <br/>
         **Solutions: [Locks](#locks), [Conditions](#conditions), [Events](#events), [Queues](#queues), [Atomic Operations](#atomic)**
 
-    * #####
+    * **Deadlocks**<br />
+        This occurs when two or more locks need resources from each other:
+        ```
+        Scenario:
+        I am lock1, I currently use the variable number and I want to increase the number by x.
+        The problem I have is that I got a dude who currently owns this x and wants my number to
+        multiply his x with my number. Since we are both in a lock, we both think our thread is the
+        most important part of all time, so we won't just simply give our variable to the other
+        person - I'm way more important than him.
+       ```
+        This scenario ends in a never ending circle of nothing happening. There are some methods that are trying to prevent
+        deathlocks from happening:
+        **[Deathlock Prevention](#dl_prevention), [Deathlock Avoidance](#dl_avoidance), [Deathlock Detection](#dl_detection)** and the
+        **[Ostrich Algorithm](#dl_ostrich).**
    
  * #### <a name="locks"></a>Locks
     
