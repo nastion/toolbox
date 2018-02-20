@@ -4,10 +4,9 @@
 
 ---
 
-### [Threading](threading/)
+### [Threading](../threading/)
  * #### Was ist Threading?
-    * **language**: German/Deutsch<br>
-    **see also**: [PDFs](threading/sources_de/SEW_4_Threading_Einfuehrung_Python.pdf)<br />
+    **siehe auch**: [PDFs](../threading/sources_de/SEW_4_Threading_Einfuehrung_Python.pdf)<br />
     Threading heißt, dass ein Programm mit mehreren Teilen auf dem Prozessor läuft. Das heißt, dass das Programm in mehrere Teile aufgeteilt
     wird, welche gleichzeitig (parallel) ausgeführt werden. Ein Prozess besteht immer aus mindestens einem Thread, aber ein Thread gehört
     immer nur genau einem Prozess <small>(vergleichbar mit 1:N im DBMS)</small>.
@@ -16,7 +15,7 @@
     <small>(und daher auch der Entwickler)</small> alles.
 
  * #### Probleme
-    **see also**: [PDFs](threading/sources_de/SEW_4_Probleme_Concurrency.pdf)<br />
+    **siehe auch**: [PDFs](../threading/sources_de/SEW_4_Probleme_Concurrency.pdf)<br />
     Mehrere Threads zu verwenden kann zu einigen Problemen führen:
     * **Threads überschreiben andere Threads**<br />
         Das ist ein Problem, welches mit dem Teilen von Ressourcen auftritt. Hierbei ist das Problem, dass einige Threads Ressourcen benutzen,
@@ -42,7 +41,7 @@
        ```
         Am Ende überschreibt Thread 2 wieder die globale Zahl. Diese bleibt eins, daher wurde der Wert der Zahl, obwohl zweimal erhöht, insgesamt
         nur um 1 erhöht.<br />
-        **Lösungen: [Locks](#locks), [Conditions](#conditions), [Events](#events), [Queues](#queues), [Atomic Operations](#atomic)**
+        **Lösungen: [Locks](#locks), [Bedingungen](#conditions), [Events](#events), [Queues](#queues), [Atomare Operationen](#atomic)**
 
     * **Deadlocks**<br />
         Deadlocks treten auf, wenn zwei oder mehr Locks eine Ressource vom jeweils anderen Lock benötigen:
@@ -63,7 +62,7 @@
 
 
  * #### <a name="conditions"></a>Bedingungen
-    **see also**: [Beispiel](threading/condition_variable_de.py)<br>
+    **siehe auch**: [Beispiel](../threading/sources_de/condition_variable_de.py)<br>
     Threading mit Bedingungsvariablen heißt, dass ein Lock mithilfe einer Bedingung ausgelöst wird.<br />
     Hierfür gibt es folgende Funktionen:<br />
     * <a name="notify_de"></a>notify(n=1)<br/>
@@ -75,12 +74,25 @@
     * **Aufbau**:
     *Wichtig ist, dass dem Konstruktor der betroffen Klassen jeweils eine Bedingungsvariable übergeben wird. <small>(Diese muss in jedem Fall die
     selbe sein!)</small> Beim Erstellen des Locks kommt nun die übergebene Bedingungsvariable zum Einsatz:<br/>
-    Der [Lock-Bereich](threading/condition_variable_de.py#L38) wird mit dieser erstellt und über die notify-Methode werden alle anderen Locks,
+    Der [Lock-Bereich](../threading/sources_de/condition_variable_de.py#L38) wird mit dieser erstellt und über die notify-Methode werden alle anderen Locks,
     die mit dieser Variable aufgeweckt werden (siehe [notify](#notify_de)), ausgeführt.*
 
-        **See also**<br/>
-        [Python API](https://docs.python.org/2/library/threading.html#condition-objects)
+        **Links:**<br/>
+        [Python API](https://docs.python.org/3/library/threading.html#condition-objects)
    
+ * #### <a name="events"></a>Events
+	
+
+
+
+ * #### <a name="queues"></a>Queues
+    **siehe auch**: [Beispiel](../threading/sources_de/queue_example_de.py)<br>
+	
+
+
+
+ * #### <a name="atomic"></a>Atomare Operationen
+
 
 ## Python API Reference
 - Python 2   
