@@ -5,5 +5,11 @@
     <orderEntry type="jdk" jdkName="Python 3.6.2 (C:\Program Files (x86)\Python36-32\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="sew4-threading-simple-encryption-pfuchs-tgm" />
+    <orderEntry type="module" module-name="sew4_tdd" />
+    <orderEntry type="module" module-name="GUI-Einfaches-Spiel" />
+  </component>
+  <component name="ReSTService">
+    <option name="workdir" value="D:\Privat\Schule\4XHIT\SEW\sew4-threading-simple-encryption-pfuchs-tgm" />
+    <option name="DOC_DIR" value="D:\Privat\Schule\4XHIT\SEW\sew4-threading-simple-encryption-pfuchs-tgm" />
   </component>
 </module>

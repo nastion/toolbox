@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/python.iml" filepath="$PROJECT_DIR$/.idea/python.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../4XHIT/SEW/sew4-threading-simple-encryption-pfuchs-tgm/.idea/sew4-threading-simple-encryption-pfuchs-tgm.iml" filepath="$PROJECT_DIR$/../../4XHIT/SEW/sew4-threading-simple-encryption-pfuchs-tgm/.idea/sew4-threading-simple-encryption-pfuchs-tgm.iml" />
-    </modules>
-  </component>
-</project>

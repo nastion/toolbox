@@ -31,18 +31,18 @@
         you wanted to count a number on multiple threads there could easily be this problem:<br/>
         Let's prevent that Thread 1 took the number and increased it by 1.
         Saying that the number was 0 at the beginning, it now is 1 - in Thread 1 but not yet globally:
-        ```python
+        ```
        Thread 1: number = 1
        Global  : number = 0
        ```
         If now Thread 2 takes the opportunity to increase the number by one, he takes of course what globally is the value of number:
-        ```python
+        ```
        Thread 1: number = 1
        Global  : number = 0
        Thread 2: number = 0  
        ```
         So if now Thread 1 overwrites the global number, Thread 2 already took the old value - and increases it by one:
-        ```python
+        ```
        Thread 1: number = 1
        Global  : number = 1
        Thread 2: number = 1 #Thread 2 already increased number!!
@@ -75,18 +75,18 @@
         Threads hinaufzählen will, kann sehr leicht dieses Problem auftreten:<br />
         Angenommen, Thread 1 hat die global Variable genommen und um 1 erhöht. Wenn nun angenommen wird, dass bei 0 begonnen wurde zu zählen,
         heißt das, dass die Zahl jetzt 1 ist - allerdings nur in Thread 1 und noch nicht global:
-        ```python
+        ```
         Thread 1: zahl = 1
         Global  : zahl = 0
        ```
         Wenn nun Thread 2 die Zahl erhöhen will, wird er natürlich wieder auf die globale Variable referenzieren:
-        ```python
+        ```
         Thread 1: zahl = 1
         Global  : zahl = 0
         Thread 2: zahl = 0
        ```
         Jetzt überschreibt Thread 1 die globale Variable und Thread 2 erhöht sie um eins - allerdings noch mit dem alten Wert:
-        ```python
+        ```
         Thread 1: zahl = 1
         Global  : zahl = 1
         Thread 2: zahl = 1 #Thread 2 hat die Zahl bereits um 1 erhöht!!
@@ -151,4 +151,7 @@
    
 
 ## Python API Reference
+- Python 2   
 Condition Objects: https://docs.python.org/2/library/threading.html#condition-objects
+- Python 3  
+Condition Objects: https://docs.python.org/3/library/threading.html#condition-objects
