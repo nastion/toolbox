@@ -1,6 +1,6 @@
 # Toolbox
 
-A <span name="toolbox">toolbox</span> for pesonal documentary with example codes
+A <span name="toolbox_span">toolbox</span> for pesonal documentary with example codes
 <br/>
 <br/>
 <br/>
@@ -55,7 +55,7 @@ A <span name="toolbox">toolbox</span> for pesonal documentary with example codes
 <br/>
 <br/>
 <br/>
-[Toolbox](#toolbox)
+[Toolbox](#toolbox_span)
 
 ### Contains:
 * [Python](python)
